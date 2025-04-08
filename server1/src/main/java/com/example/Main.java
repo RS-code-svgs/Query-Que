@@ -23,16 +23,23 @@ public class Main {
             return("This is a test");
         });
 
-        get("/",(req,res)->{
+        /*get("/",(req,res)->{
             res.redirect("/final.html");
             return null;
-        });
+        });*/
 
         post("/submit",(req,res)->{
-            Submit info = gson.fromJson(req.body(), Submit.class);
+            String code =(req.queryParams("classcode"));
+            String name =(req.queryParams("name"));
+           
+            System.out.println(code);
+            System.out.println(name);
             System.out.println("Clicked submit");
-            if(info.code.equals(classCode)){
-                names.add(info.name);
+           if(code.equals(classCode)){
+                names.add(name);
+                res.redirect("/final.html");
+            } else{
+                res.redirect("/deny.html");
             }
             res.status(201);
             return "";

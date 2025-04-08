@@ -3,6 +3,7 @@ package com.example;
 import javafx.beans.Observable;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
@@ -16,11 +17,6 @@ public class intruc {
     private Button delete;
 
     @FXML
-    private ListView<String> list;
-
-    private ObservableList<String> students;
-
-    @FXML
     private Button up;
 
     @FXML
@@ -31,6 +27,11 @@ public class intruc {
     
 
     private String currentValue;
+
+    @FXML
+    private ListView<String> list;
+
+    private ObservableList<String> students;
     @FXML
     void initialize(){
         students= FXCollections.observableArrayList();
@@ -49,6 +50,14 @@ public class intruc {
     
     private void recieve(){
         
+    }
+
+    @FXML
+    void RemoveStudent(ActionEvent event) {
+        int x =list.getSelectionModel().getSelectedIndex();
+        if(x!=-1){
+            students.remove(x);
+        }
     }
 }
  
