@@ -26,12 +26,12 @@
                   <Insets bottom="5.0" top="5.0" />
                </VBox.margin>
             </Button>
-            <Button fx:id="delete" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Delete">
+            <Button fx:id="delete" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#RemoveStudent" prefHeight="25.0" prefWidth="90.0" text="Delete">
                <VBox.margin>
                   <Insets bottom="5.0" top="5.0" />
                </VBox.margin>
             </Button>
-            <Button fx:id="refresh" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Refresh">
+            <Button fx:id="refresh" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Refresh" prefHeight="25.0" prefWidth="90.0" text="Refresh">
                <VBox.margin>
                   <Insets bottom="5.0" top="5.0" />
                </VBox.margin>
