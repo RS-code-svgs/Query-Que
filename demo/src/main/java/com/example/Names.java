@@ -24,4 +24,17 @@ public class Names {
     public ArrayList<String> getList(){
         return names;
     }
+
+    public void up(String n){
+        int x = names.indexOf(n);
+        String y=names.get(x-1);
+        names.set(x-1, names.get(x));
+        names.set(x, y);
+    }
+    public void down(String n){
+        int x = names.indexOf(n);
+        String y=names.get(x+1);
+        names.set(x+1, names.get(x));
+        names.set(x, y);
+    }
 }

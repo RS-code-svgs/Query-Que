@@ -11,17 +11,17 @@
       <ListView fx:id="list" layoutX="100.0" layoutY="71.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="10.0" />
       <VBox alignment="CENTER" layoutX="441.0" layoutY="78.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.rightAnchor="59.0">
          <children>
-            <Button fx:id="up" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Move Up">
+            <Button fx:id="up" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#moveu" prefHeight="25.0" prefWidth="90.0" text="Move Up">
                <VBox.margin>
                   <Insets bottom="5.0" top="5.0" />
                </VBox.margin>
             </Button>
-            <Button fx:id="down" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Move Down">
+            <Button fx:id="down" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#moved" prefHeight="25.0" prefWidth="90.0" text="Move Down">
                <VBox.margin>
                   <Insets bottom="5.0" top="5.0" />
                </VBox.margin>
             </Button>
-            <Button fx:id="star" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Star">
+            <Button fx:id="star" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Star" prefHeight="25.0" prefWidth="90.0" text="Star">
                <VBox.margin>
                   <Insets bottom="5.0" top="5.0" />
                </VBox.margin>
