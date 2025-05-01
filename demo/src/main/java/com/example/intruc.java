@@ -77,10 +77,11 @@ public class intruc {
             int x =list.getSelectionModel().getSelectedIndex();
             Text thing = list.getItems().get(x);
             String y="true";
+            String t = thing.getText();
             if(thing.getFill().equals(Color.GOLD)){
                 y="false";
+                t= t+"*";
             }
-            String t = thing.getText();
             /*Text s = new Text("☆");
             s.setFill(Color.GOLD);
             thing.setText(thing.getText()+"\t \t"+s);
@@ -88,7 +89,7 @@ public class intruc {
             thing.setFill(Color.GOLD);
            OkHttpClient client = new OkHttpClient();
            RequestBody formBody = new FormBody.Builder()
-           .add("name",t+"*")
+           .add("name",t)
            .add("color",y)
            .build();
        Request request = new Request.Builder()
