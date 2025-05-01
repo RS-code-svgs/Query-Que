@@ -88,6 +88,14 @@ public class Main {
             return "";
         });
 
+        post("/changec", (req, res) -> {
+            String n = (req.queryParams("code"));
+            classCode=n;
+            res.status(201);
+
+            return "";
+        });
+
         post("/remove", (req, res) -> {
             // System.out.println("Clicked remove");
 
@@ -120,9 +128,6 @@ public class Main {
         });
     }
 
-    public static void setnames(Names x) {
-        names = x;
-    }
 
     public static void disableCORS() {
         before((req, res) -> {

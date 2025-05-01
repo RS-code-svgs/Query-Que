@@ -3,6 +3,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
@@ -38,5 +39,7 @@
             </Button>
          </children>
       </VBox>
+      <TextField fx:id="currentCode" layoutX="416.0" layoutY="296.0" />
+      <Button layoutX="447.0" layoutY="330.0" mnemonicParsing="false" onAction="#changc" text="Change Code" />
    </children>
 </AnchorPane>
