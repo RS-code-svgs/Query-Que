@@ -88,7 +88,7 @@ public class intruc {
             thing.setFill(Color.GOLD);
            OkHttpClient client = new OkHttpClient();
            RequestBody formBody = new FormBody.Builder()
-           .add("name",t)
+           .add("name",t+"*")
            .add("color",y)
            .build();
        Request request = new Request.Builder()

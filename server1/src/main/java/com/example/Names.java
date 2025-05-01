@@ -27,8 +27,12 @@ public class Names {
             names.set(y, x + "*");
         } else{
             int y = names.indexOf(x);
-            String r=names.get(y);
-            names.set(y, r.substring(0, r.indexOf("*")));
+            try {
+                String r=names.get(y);
+                names.set(y, r.substring(0, r.indexOf("*")));
+            } catch (Exception e) {
+                System.out.println(e);
+            }
         }
     }
 
